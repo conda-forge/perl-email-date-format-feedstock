@@ -1,10 +1,10 @@
 {% set name = "perl-email-date-format" %}
-{% set version = "1.006" %}
-{% set sha256 = "10d5fc217c8c85a9ae5971250f58c42415ec69715a26e513742a8ac7c6489885" %}
+{% set version = "1.008" %}
+{% set sha256 = "432b7c83ff88749af128003f5257c573aec1a463418db90ed22843cbbc258b4f" %}
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: http://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-Date-Format-{{ version }}.tar.gz
@@ -37,10 +37,7 @@ about:
   license: GPL-1.0-or-later OR Artistic-1.0-Perl
   license_family: OTHER
   summary: 'produce RFC 2822 date strings'
-  license_file:
-    - {{ environ["PREFIX"] }}/man/man1/perlartistic.1
-    - {{ environ["PREFIX"] }}/man/man1/perlgpl.1
-    - LICENSE
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
